@@ -17,9 +17,10 @@ class App extends Component {
   }
 
   func = () => {
-    fetch('/test')
-      .then(res => res.json())
-      .then(user => this.setState({user}, () => console.log("fetching", user)))
+    fetch('/addDatabase')
+    // fetch('/test')
+    //   .then(res => res.json())
+    //   .then(user => this.setState({user}, () => console.log("fetching", user)))
   }
 
   render(){
