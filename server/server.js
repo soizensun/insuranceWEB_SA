@@ -16,13 +16,15 @@ app.get('/test', (req, res) => {
         {id: 2, name: "kitpavin", lastname: "chaiwong"}
     ];
     res.json(user);
+    res.send(user);
 });
 
-let docRef = db.collection('test').doc('alovelace');
-let setAda = docRef.set(
-  {
-    first: 'Kritpavin',
-    last: 'Chiawong',
+const data = {  
+    first: 'asdf',
+    last: 'asdf',
     born: 1815
-  }
-);
+}
+let setAda = db.collection('test').add(data);
+
+
+
