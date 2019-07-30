@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-reactapp": "cd reactApp && npm start",
-    "start-server": "nodemon server.js",
+    "reactapp": "cd reactApp && npm start",
+    "server": "nodemon server.js",
     
     "install-reactapp": "cd reactApp && npm install",
     "install-server": "npm install"
