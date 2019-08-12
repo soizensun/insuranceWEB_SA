@@ -30,24 +30,35 @@ const data =
 
 const datas = [
     {
-        first: 'test1',
-        last: 'test1',
-        born: 1111,
+        first: 'Kitpavin',
+        last: 'chaiwong',
+        born: 15101997,
         timestamp: FieldValue.serverTimestamp()
     },
     {
-        first: 'test2',
-        last: 'test2',
-        born: 2222,
+        first: 'firstName2',
+        last: 'lastName2',
+        born: 01112014,
         timestamp: FieldValue.serverTimestamp()
     },
     {
-        first: 'test3',
-        last: 'test',
-        born: 3333,
-        // startTime : new admin.Timestamp(42, 0),
+        first: 'firatNmame3',
+        last: 'lastName3',
+        born: 11051998,
         timestamp: FieldValue.serverTimestamp(),
     },
+    {
+        first: 'firatNmame4',
+        last: 'lastName4',
+        born: 11051998,
+        timestamp: FieldValue.serverTimestamp(),
+    },
+    {
+        first: 'firatNmame5',
+        last: 'lastName5',
+        born: 11051995,
+        timestamp: FieldValue.serverTimestamp(),
+    }
 ]
 // let setAda = db.collection('test').add(data);
 
