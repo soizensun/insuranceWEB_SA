@@ -68,7 +68,7 @@ app.get('/hi', (req, res) => { res.json('Hello, World!') })
 //   console.log(kittens);
 // })
 
-// app.get('/hi', (req, res) => {
+// app.get('/test1', (req, res) => {
 //  Kitten.find(function (err, kittens) {
 //     if (err) return console.error(err);
 //     res.send(kittens)

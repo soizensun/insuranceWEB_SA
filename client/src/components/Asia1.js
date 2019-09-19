@@ -13,26 +13,21 @@ const text = `
   it can be found as a welcome guest in many households across the world.`;
 
 const genExtra = () => (
-    <Button>asdfasdf</Button>
+    <Button>ซื้อประกัน</Button>
 );
 
 class Asia1 extends React.Component{
     render(){
         return(
             <div>
-                <Collapse
+                <Collapse   
                     accordion
+                    style={{marginBottom: 2,}}
                     defaultActiveKey={['1']}
                     // onChange={callback}
                     // expandIconPosition= "left"
-                    >
+                >
                     <Panel header="This is panel header 1" key="1" extra={genExtra()}>
-                        <div>{text}</div>
-                    </Panel>
-                    <Panel header="This is panel header 2" key="2" extra={genExtra()}>
-                        <div>{text}</div>
-                    </Panel>
-                    <Panel header="This is panel header 3" key="3" extra={genExtra()}>
                         <div>{text}</div>
                     </Panel>
                 </Collapse>
