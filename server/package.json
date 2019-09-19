@@ -1,0 +1,21 @@
+{
+  "name": "sa",
+  "version": "1.0.0",
+  "description": "sa pro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    
+    "server" : "nodemon server.js",
+    "test-mongoose": "nodemon testServer.js"
+  },
+  "author": "sa's group",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "firebase-admin": "^8.3.0",
+    "mongodb": "^3.3.2",
+    "mongoose": "^5.7.0",
+    "nodemon": "^1.19.1"
+  }
+}

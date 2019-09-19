@@ -5,28 +5,12 @@ let FieldValue = require('firebase-admin').firestore.FieldValue;
 
 
 // open port 5000
-app.listen(5000, () => console.log('service run in port 5000'))
+app.listen(5000, () => console.log('---- welcome to post 5000 Main server ----'))
 
 // initialize firestore
 let serviceAccount = require('./saproject-a5c49-firebase-adminsdk-ihvjg-2ad01e812e.json');
 admin.initializeApp({credential: admin.credential.cert(serviceAccount)});
 let db = admin.firestore();
-
-// app.get('/test', (req, res) => {
-//     const user = [ 
-//         {id: 1, name: "kitpavin", lastname: "chaiwong"},
-//         {id: 2, name: "kitpavin", lastname: "chaiwong"}
-//     ];
-//     res.json(user);
-// });
-
-const data = 
-{  
-    first: 'test1',
-    last: 'test1',
-    born: 1234
-}
-
 
 const datas = [
     {
@@ -66,7 +50,7 @@ app.get('/addDatabase', (res, req) => {
     datas.map(data => {
         db.collection('test').add(data)
     })
-    
+    console.log("----------------- test database --------------");
     
 })
 

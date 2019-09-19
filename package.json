@@ -1,21 +1,26 @@
 {
-  "name": "sa",
+  "name": "insuranceweb",
   "version": "1.0.0",
-  "description": "sa pro",
+  "description": "eazy for installing with 2 steps",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "reactapp": "cd reactApp && npm start",
-    "server": "nodemon server.js",
-    
-    "install-reactapp": "cd reactApp && npm install",
-    "install-server": "npm install"
+    "test" : "echo \"Error: no test specified\" && exit 1",
+    "test-mongoose" : "cd server && npm run test-mongoose",
+
+    "client" : "cd client && npm start",
+    "server" : "cd server && npm run server",
+
+    "install-client" : "cd client && npm install",
+    "install-server" : "cd server && npm install"
   },
-  "author": "sa's group",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soizensun/insuranceWEB_SA.git"
+  },
+  "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "firebase-admin": "^8.3.0",
-    "nodemon": "^1.19.1"
-  }
+  "bugs": {
+    "url": "https://github.com/soizensun/insuranceWEB_SA/issues"
+  },
+  "homepage": "https://github.com/soizensun/insuranceWEB_SA#readme"
 }

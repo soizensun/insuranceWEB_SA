@@ -6,7 +6,7 @@ eazy for installing with 2 steps
 
 2. install reactApp
 
-### `npm run install-reactapp`
+### `npm run install-client`
 
 -----------------------------------
 
@@ -19,5 +19,5 @@ run near file server.js
 
 2. start reactApp side
 
-### `npm run reactapp`
+### `npm run client`
 run near file server.js too
