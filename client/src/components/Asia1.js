@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tabs, Collapse, Icon } from 'antd';
+import { Tabs, Collapse, Icon, Button } from 'antd';
 import 'antd/dist/antd.css';
 
 const { Panel } = Collapse;
@@ -13,12 +13,7 @@ const text = `
   it can be found as a welcome guest in many households across the world.`;
 
 const genExtra = () => (
-    <Icon
-        type="setting"
-        onClick={event => {
-        event.stopPropagation();
-        }}
-    />
+    <Button>asdfasdf</Button>
 );
 
 class Asia1 extends React.Component{
