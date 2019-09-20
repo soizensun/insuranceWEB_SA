@@ -1,8 +1,9 @@
-const UserModel = require('../Models/User');
+const UserSchema = require('../Models/UserSchema');
 
 module.exports = {
     create: (req, res) => {
-        let user = new UserModel({
+        console.log(req.body);
+        let user = new UserSchema({
             name: req.body.name,
             email: req.body.email,
             username: req.body.username,
@@ -10,13 +11,13 @@ module.exports = {
         });
 
         user.save()
-            .then(result => {
-                res.sent("SUCCESSED")
-                res.json({ status: SUCCESSED, result: result});
+            .then(() => {
+                res.send("SUCCESSED")
+                // res.json({ status: SUCCESSED, result: result});
             })
-            .catch(error => {
-                res.sent("FAILED")
-                res.json({ status: FAILED, result: error});
+            .catch(() => {
+                res.send("FAILED")
+                // res.json({ status: FAILED, result: error});
             });
 
     },

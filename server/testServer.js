@@ -1,4 +1,5 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const app = express();
 var mongoose = require('mongoose');
 
@@ -17,8 +18,8 @@ db.once('open', function() {
 });
 
 //Middleware
-// app.use(express.urlencoded({extended: true}));
-// app.use(express.json);
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
 
 //Controller
 const UserController = require('./Controller/UserController');
@@ -28,6 +29,7 @@ app.post('/createUser', UserController.create);
 app.post('/test', (req, res) => { res.json({"res" : "wow za"}) })
 app.get('/hi', (req, res) => { res.json('Hello, World!') })
 
+/////////////////////////////////////////////////////////////
 
 // const express = require('express');
 // const app = express();
