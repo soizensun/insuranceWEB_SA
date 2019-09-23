@@ -12,11 +12,11 @@ const text = `
   Known for its loyalty and faithfulness,
   it can be found as a welcome guest in many households across the world.`;
 
-const genExtra = () => (
-    <Button>  
-        ซื้อประกัน 
-    </Button>
-);
+// const genExtra = () => (
+//     <Button>  
+//         ซื้อประกัน 
+//     </Button>
+// );
 
 class Asia2Plus extends React.Component{
     render(){
